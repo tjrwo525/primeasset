@@ -8,7 +8,7 @@ headers = []
   [functions."*"]
 
 [build]
-publish = "C:\\웹사이트\\primeasset-realestate"
+publish = "."
 publishOrigin = "config"
 
   [build.environment]
