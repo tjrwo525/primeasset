@@ -177,6 +177,21 @@ def main():
         print("\n오늘 발행할 글이 없습니다.")
         return 0
 
+    # 대표 이미지가 없으면 발행하지 않는다 (깨진 이미지로 공개되는 사고 방지)
+    ready, blocked = [], []
+    for p in due:
+        missing = [f for f in (p["entry"]["image"], p["entry"]["imageWebp"])
+                   if not os.path.exists(os.path.join(ROOT, f))]
+        (blocked if missing else ready).append((p, missing))
+    if blocked:
+        print("\n[보류] 대표 이미지가 없어 발행하지 않습니다:")
+        for p, missing in blocked:
+            print(f"  - {p['slug']}: {', '.join(missing)}")
+        print("  이미지를 추가하면 다음 실행에서 자동으로 발행됩니다.")
+    due = [p for p, _ in ready]
+    if not due:
+        return 0
+
     print(f"\n{len(due)}건 발행 처리:")
     for p in due:
         publish_html(p, args.dry_run)
