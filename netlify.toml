@@ -10,6 +10,7 @@ headers = []
 [build]
 publish = "."
 publishOrigin = "config"
+command = "echo 'Building primeasset...' && exit 0"
 
   [build.environment]
 
