@@ -1,0 +1,22 @@
+# robots.txt - 검색 엔진 크롤러 지침
+
+# 모든 크롤러에 대한 규칙
+User-agent: *
+Allow: /
+
+# 불필요한 파일/폴더는 크롤링 제한
+Disallow: /includes/
+Disallow: /vendor/
+
+# 사이트맵 위치 지정
+Sitemap: https://primeasset-realestate.co.kr/sitemap.xml
+
+# Bad crawlers 제한
+User-agent: Baidu
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

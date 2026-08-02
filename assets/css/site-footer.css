@@ -1,0 +1,59 @@
+/* 사이트 공통 푸터 */
+.site-footer-nav {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.site-footer-nav a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+.site-footer-nav a:hover {
+    color: #003990;
+    text-decoration: underline;
+}
+
+.site-footer-recruit {
+    color: #ffbd59 !important;
+    font-weight: 600;
+}
+
+.site-footer-recruit:hover {
+    color: #ffd875 !important;
+}
+
+.site-footer-copy {
+    text-align: center;
+    margin: 0;
+}
+
+/* 크롤러용 정적 블로그 목록（화면에는 숨김, 링크는 HTML에 존재） */
+.seo-blog-index {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.seo-blog-index ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer-copy a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-footer-copy a:hover {
+    text-decoration: underline;
+    color: #003990;
+}

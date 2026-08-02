@@ -1,0 +1,139 @@
+/* ═══════════════════════════════════════════════
+   글로벌 헤더 CTA — 상담문의 + 채용 (페어 버튼)
+   ═══════════════════════════════════════════════ */
+
+.header-area .main-nav .nav li.nav-cta-group {
+  padding-left: 28px;
+  padding-right: 0;
+}
+
+/* 템플릿 last-child a 규칙 무력화 */
+.header-area .main-nav .nav li.nav-cta-group a,
+.background-header .main-nav .nav li.nav-cta-group a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  height: auto !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+  border-radius: 999px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease !important;
+  white-space: nowrap;
+}
+
+.header-area .main-nav .nav li.nav-cta-group a:hover,
+.background-header .main-nav .nav li.nav-cta-group a:hover {
+  opacity: 1 !important;
+}
+
+.nav-cta-pair {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 상담문의 — 세컨더리 (아웃라인) */
+.nav-btn--consult {
+  padding: 10px 20px !important;
+  color: #003990 !important;
+  background: #ffffff !important;
+  border: 1.5px solid #003990 !important;
+  box-shadow: 0 2px 8px rgba(0, 57, 144, 0.08);
+}
+
+.nav-btn--consult:hover {
+  background: #003990 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 57, 144, 0.22);
+}
+
+/* 채용 — 프라이머리 (브랜드 골드, 상담문의 오른쪽) */
+.nav-btn--recruit {
+  padding: 10px 22px !important;
+  color: #1a1f36 !important;
+  background: linear-gradient(180deg, #ffd875 0%, #ffbd59 100%) !important;
+  border: 1.5px solid #e5a840 !important;
+  box-shadow: 0 4px 14px rgba(255, 189, 89, 0.45);
+  font-weight: 700 !important;
+}
+
+.nav-btn--recruit:hover {
+  background: linear-gradient(180deg, #ffbd59 0%, #f0a840 100%) !important;
+  color: #1a1f36 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(255, 189, 89, 0.5);
+}
+
+body.recruit-page .nav-btn--recruit {
+  box-shadow: 0 4px 16px rgba(255, 189, 89, 0.55);
+  outline: 2px solid rgba(255, 189, 89, 0.35);
+  outline-offset: 2px;
+}
+
+/* 모바일 메뉴 */
+@media (max-width: 767px) {
+  .header-area .main-nav .nav li.nav-cta-group {
+    padding: 16px 20px !important;
+    border-bottom: 1px solid #eee;
+    background: #fff !important;
+  }
+
+  .nav-cta-pair {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .header-area .main-nav .nav li.nav-cta-group a {
+    width: 100% !important;
+    padding: 14px 20px !important;
+    font-size: 15px !important;
+    height: auto !important;
+    line-height: 1.25 !important;
+  }
+
+  /* 템플릿 모바일 메뉴 li a 회색 배경 무력화 */
+  .header-area .main-nav .nav li.nav-cta-group a.nav-btn--consult {
+    background: #ffffff !important;
+    color: #003990 !important;
+    border: 1.5px solid #003990 !important;
+  }
+
+  .header-area .main-nav .nav li.nav-cta-group a.nav-btn--consult:hover {
+    background: #003990 !important;
+    color: #ffffff !important;
+  }
+
+  .header-area .main-nav .nav li.nav-cta-group a.nav-btn--recruit {
+    background: linear-gradient(180deg, #ffd875 0%, #ffbd59 100%) !important;
+    color: #1a1f36 !important;
+    border: 1.5px solid #e5a840 !important;
+    font-weight: 700 !important;
+  }
+
+  .header-area .main-nav .nav li.nav-cta-group a.nav-btn--recruit:hover {
+    background: linear-gradient(180deg, #ffbd59 0%, #f0a840 100%) !important;
+    color: #1a1f36 !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-area .main-nav .nav li.nav-cta-group {
+    padding-left: 16px;
+  }
+
+  .nav-cta-pair {
+    gap: 8px;
+  }
+
+  .header-area .main-nav .nav li.nav-cta-group a {
+    font-size: 13px !important;
+    padding: 9px 16px !important;
+  }
+}

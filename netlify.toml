@@ -1,0 +1,88 @@
+redirectsOrigin = "config"
+headersOrigin = "config"
+plugins = []
+headers = []
+
+[functions]
+
+  [functions."*"]
+
+[build]
+publish = "C:\\웹사이트\\primeasset-realestate"
+publishOrigin = "config"
+
+  [build.environment]
+
+  [build.processing]
+  skip_processing = false
+
+    [build.processing.css]
+
+    [build.processing.html]
+    pretty_urls = true
+
+    [build.processing.images]
+
+    [build.processing.js]
+
+  [build.services]
+
+[[redirects]]
+from = "https://www.primeasset-realestate.co.kr/*"
+to = "https://primeasset-realestate.co.kr/:splat"
+status = 301
+force = true
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/index.html"
+to = "/"
+status = 301
+force = true
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/blog-list.html"
+to = "/blog-list"
+status = 301
+force = true
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/recruit.html"
+to = "/recruit"
+status = 301
+force = true
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/blog-post-:num.html"
+to = "/blog-post-:num"
+status = 301
+force = true
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
