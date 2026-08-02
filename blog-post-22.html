@@ -109,6 +109,54 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://primeasset-realestate.co.kr/" },
+        { "@type": "ListItem", "position": 2, "name": "블로그", "item": "https://primeasset-realestate.co.kr/blog-list" },
+        { "@type": "ListItem", "position": 3, "name": "낙성대 원룸 계약 보증금 함정 3가지", "item": "https://primeasset-realestate.co.kr/blog-post-22" }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "프라임에셋부동산",
+      "image": "https://primeasset-realestate.co.kr/assets/images/logo-v3.png",
+      "url": "https://primeasset-realestate.co.kr",
+      "telephone": "+82-10-8392-1072",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "솔밭로 1 봉천빌딩 1층",
+        "addressLocality": "관악구",
+        "addressRegion": "서울특별시",
+        "postalCode": "08779",
+        "addressCountry": "KR"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "서울특별시 관악구 낙성대동" },
+        { "@type": "Place", "name": "서울특별시 관악구 봉천동" },
+        { "@type": "Place", "name": "서울특별시 관악구 신림동" }
+      ],
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "10:00",
+        "closes": "19:00"
+      }]
+    }
+    </script>
+
+    <meta name="geo.region" content="KR-11">
+    <meta name="geo.placename" content="서울특별시 관악구 낙성대동">
+    <meta name="geo.position" content="37.477078;126.963608">
+    <meta name="ICBM" content="37.477078, 126.963608">
+
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com https://maps.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https: data: blob:; frame-src https://www.google.com;">
 
     <link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
@@ -130,7 +178,7 @@
                                 <span class="date">2026년 8월 9일</span>
                                 <span class="category">부동산 정보</span>
                             </div>
-                            <picture><source srcset="assets/images/contract-security-checklist.webp" type="image/webp"><img src="assets/images/contract-security-checklist.jpg" alt="낙성대역 원룸 계약 보증금 보호 체크리스트" loading="lazy" width="800" height="450"></picture>
+                            <picture><source srcset="assets/images/contract-security-checklist.webp" type="image/webp"><img src="assets/images/contract-security-checklist.jpg" alt="낙성대역 원룸 전세 계약 시 위험한 등기부등본과 안전한 등기부등본 비교 - 선순위 채무 확인으로 보증금 보호하기" loading="eager" fetchpriority="high" width="1200" height="630"></picture>
                         </div>
 
                         <div class="post-content">
@@ -142,7 +190,17 @@
 
                             <p>오늘 글에서는 제가 5년간 낙성대·봉천동에서 경험한 <strong>"계약 후 보증금 떼일 뻔한 3가지 함정"</strong>과 <strong>해결법</strong>을 구체적으로 공개합니다.</p>
 
-                            <h2>함정 1: 등기부등본 조회 안 하고 계약하기</h2>
+                            <nav style="background:#f0f2ff; border-left:4px solid #2c2762; border-radius:10px; padding:20px 25px; margin:30px 0;" aria-label="목차">
+                                <strong style="color:#2c2762; font-size:17px; display:block; margin-bottom:12px;">이 글의 목차</strong>
+                                <ol style="margin:0; padding-left:20px; line-height:2;">
+                                    <li><a href="#trap1" style="color:#2c2762;">함정 1 — 등기부등본 조회 안 하고 계약하기</a></li>
+                                    <li><a href="#trap2" style="color:#2c2762;">함정 2 — 확정일자를 받지 않기</a></li>
+                                    <li><a href="#trap3" style="color:#2c2762;">함정 3 — 전세보증보험 미가입</a></li>
+                                    <li><a href="#checklist" style="color:#2c2762;">계약 전 30분 안전 검사 체크리스트</a></li>
+                                </ol>
+                            </nav>
+
+                            <h2 id="trap1">함정 1: 등기부등본 조회 안 하고 계약하기</h2>
 
                             <h3>A씨의 사례</h3>
                             <ul>
@@ -172,7 +230,9 @@
                                 <li>보증금 규모 축소</li>
                             </ul>
 
-                            <h2>함정 2: 확정일자를 받지 않기</h2>
+                            <p style="background:#fffbe6; border-left:4px solid #FFE812; padding:14px 18px; border-radius:8px;">💡 함께 읽으면 좋은 글 → <a href="blog-post-20" style="color:#2c2762; font-weight:600;">관악구·낙성대 부동산 고르는 법 2026 — 좋은 중개사 5가지 기준</a></p>
+
+                            <h2 id="trap2">함정 2: 확정일자를 받지 않기</h2>
 
                             <h3>B씨의 사건</h3>
                             <p>B씨는 낙성대역 신축 투룸에 보증금 1,500만 원에 계약했습니다. 계약서도 샀고, 돈도 냈습니다.</p>
@@ -201,7 +261,9 @@
 
                             <p>프라임에셋은 확정일자 방문 동행 서비스 제공합니다. 시간이 부족한 학생/직장인을 위해 확정일자 신청부터 완료까지 함께 진행합니다.</p>
 
-                            <h2>함정 3: 전세보증보험 미가입 또는 불완전 가입</h2>
+                            <p style="background:#fffbe6; border-left:4px solid #FFE812; padding:14px 18px; border-radius:8px;">💡 전입신고·확정일자 전체 절차는 → <a href="blog-post-18" style="color:#2c2762; font-weight:600;">관악구 이사·계약 갱신 완전 가이드 — 등기·확정일자 체크리스트</a></p>
+
+                            <h2 id="trap3">함정 3: 전세보증보험 미가입 또는 불완전 가입</h2>
 
                             <h3>C씨의 사건</h3>
                             <p>C씨는 낙성대역 원룸에 전세금 8,000만 원을 냈습니다. 계약서에는 "전세보증보험 가입"이라고 적혀 있었는데...</p>
@@ -244,7 +306,7 @@
                                 <li>가입서류 작성 동행</li>
                             </ul>
 
-                            <h2>최종 체크리스트: 계약 전 30분 안전 검사</h2>
+                            <h2 id="checklist">최종 체크리스트: 계약 전 30분 안전 검사</h2>
                             <ul>
                                 <li>□ 건물 등기부등본 확인 (선순위 채무 없는가?)</li>
                                 <li>□ 건물주 신원 및 신용도 확인</li>
@@ -266,6 +328,24 @@
                             <p>또한 전세보증보험(HUG/SGI) 가입, 확정일자 신청 동행, 임차인보험 상담까지 <strong>입주 전 모든 보호 조치</strong>를 함께합니다.</p>
 
                             <p>당신의 보증금은 당신이 지켜야 합니다. 좋은 중개사의 도움으로, 함정 없는 계약을 시작하세요.</p>
+
+                            <h2>함께 읽으면 좋은 글</h2>
+                            <ul>
+                                <li><a href="blog-post-20">관악구·낙성대 부동산 고르는 법 2026 — 좋은 중개사 5가지 기준 &amp; 레드플래그 7가지</a></li>
+                                <li><a href="blog-post-13">서울대 신입생 자취방 구하기 완전 가이드 — 낙성대·봉천동 원룸 시세·주의사항</a></li>
+                                <li><a href="blog-post-19">서울대 기숙사 탈락 후 자취방 급구 가이드 — 48시간 액션플랜</a></li>
+                                <li><a href="blog-post-21">2026년 7월 관악구·낙성대역 원룸·전세 최신 시세</a></li>
+                                <li><a href="blog-post-05">인테리어 공사 전 꼭 알아야 할 법적 주의사항 — 보증금 회수 편</a></li>
+                            </ul>
+
+                            <h2>낙성대역 프라임에셋부동산 안내</h2>
+                            <p>
+                                <strong>프라임에셋부동산</strong><br>
+                                주소: 서울특별시 관악구 솔밭로 1 봉천빌딩 1층 (<strong>낙성대역 5번 출구 도보 1분</strong>)<br>
+                                영업시간: 매일 10:00 ~ 19:00<br>
+                                취급: 관악구·낙성대동·봉천동·신림동 원룸 / 투룸 / 전세 / 월세 중개, 이사·입주청소·가전렌탈·인테리어 원스톱
+                            </p>
+                            <p>계약 전 <strong>등기부등본 확인 · 확정일자 · 전세보증보험</strong> 3가지를 함께 점검해드립니다. <a href="/">프라임에셋부동산 홈으로 가기</a> · <a href="blog-list">전체 블로그 보기</a></p>
 
                             <div style="text-align: center; margin-top: 40px; padding: 30px; background: #f0f2ff; border-radius: 15px;">
                                 <h3 style="color: #2c2762; margin-bottom: 15px;">계약 전 안전 검사 상담</h3>
