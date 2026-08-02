@@ -644,6 +644,9 @@
       localStorage.setItem('healthPopupHideUntil', t.getTime().toString());
     }
     document.addEventListener('DOMContentLoaded', function() {
+      // 팝업 비표시 (2026년 8월 이후 재활성화 시까지)
+      return;
+      /*
       var hideUntil = localStorage.getItem('healthPopupHideUntil');
       if (sessionStorage.getItem('healthPopupClosed') || (hideUntil && Date.now() < +hideUntil)) return;
       setTimeout(function() {
@@ -651,6 +654,7 @@
         overlay.style.display = 'flex';
         overlay.addEventListener('click', function(e) { if (e.target === overlay) closeHealthPopup(false); });
       }, 1200);
+      */
     });
   </script>
   <!-- ===== 건강검진 이벤트 팝업 End ===== -->
