@@ -110,6 +110,54 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://primeasset-realestate.co.kr/" },
+        { "@type": "ListItem", "position": 2, "name": "블로그", "item": "https://primeasset-realestate.co.kr/blog-list" },
+        { "@type": "ListItem", "position": 3, "name": "신축 vs 일반 건물 입주청소 체크리스트", "item": "https://primeasset-realestate.co.kr/blog-post-23" }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "프라임에셋부동산",
+      "image": "https://primeasset-realestate.co.kr/assets/images/logo-v3.png",
+      "url": "https://primeasset-realestate.co.kr",
+      "telephone": "+82-10-8392-1072",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "솔밭로 1 봉천빌딩 1층",
+        "addressLocality": "관악구",
+        "addressRegion": "서울특별시",
+        "postalCode": "08779",
+        "addressCountry": "KR"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "서울특별시 관악구 낙성대동" },
+        { "@type": "Place", "name": "서울특별시 관악구 봉천동" },
+        { "@type": "Place", "name": "서울특별시 관악구 신림동" }
+      ],
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "10:00",
+        "closes": "19:00"
+      }]
+    }
+    </script>
+
+    <meta name="geo.region" content="KR-11">
+    <meta name="geo.placename" content="서울특별시 관악구 낙성대동">
+    <meta name="geo.position" content="37.477078;126.963608">
+    <meta name="ICBM" content="37.477078, 126.963608">
+
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com https://maps.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https: data: blob:; frame-src https://www.google.com;">
 
     <link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
@@ -131,7 +179,7 @@
                                 <span class="date">2026년 8월 10일</span>
                                 <span class="category">부동산 정보</span>
                             </div>
-                            <picture><source srcset="assets/images/move-in-cleaning-comparison.webp" type="image/webp"><img src="assets/images/move-in-cleaning-comparison.jpg" alt="신축 아파트 입주청소 완벽 가이드" loading="lazy" width="800" height="450"></picture>
+                            <picture><source srcset="assets/images/move-in-cleaning-comparison.webp" type="image/webp"><img src="assets/images/move-in-cleaning-comparison.jpg" alt="신축 아파트와 기존 건물의 입주청소 오염 비교 - 건설먼지·도장 부산물·타일 시멘트 vs 기름때·곰팡이" loading="eager" fetchpriority="high" width="1200" height="630"></picture>
                         </div>
 
                         <div class="post-content">
@@ -147,7 +195,17 @@
 
                             <p><strong>신축 건물은 "건설 먼지 + 도장 부산물 + 시공 흔적"으로 가장 더럽습니다.</strong></p>
 
-                            <h2>신축 건물 입주청소 vs 일반 건물 청소: 무엇이 다른가?</h2>
+                            <nav style="background:#f0f2ff; border-left:4px solid #2c2762; border-radius:10px; padding:20px 25px; margin:30px 0;" aria-label="목차">
+                                <strong style="color:#2c2762; font-size:17px; display:block; margin-bottom:12px;">이 글의 목차</strong>
+                                <ol style="margin:0; padding-left:20px; line-height:2;">
+                                    <li><a href="#diff" style="color:#2c2762;">신축 vs 일반 건물, 오염이 어떻게 다른가</a></li>
+                                    <li><a href="#checklist" style="color:#2c2762;">신축 입주청소 필수 체크리스트</a></li>
+                                    <li><a href="#cost" style="color:#2c2762;">셀프 청소 vs 전문팀 비용 분석</a></li>
+                                    <li><a href="#traps" style="color:#2c2762;">입주청소 함정 3가지</a></li>
+                                </ol>
+                            </nav>
+
+                            <h2 id="diff">신축 건물 입주청소 vs 일반 건물 청소: 무엇이 다른가?</h2>
 
                             <h3>신축 건물의 진짜 문제</h3>
 
@@ -180,7 +238,9 @@
 
                             <p><strong>따라서 청소 방법이 전혀 다릅니다.</strong></p>
 
-                            <h2>신축 건물별 입주청소 필수 체크리스트</h2>
+                            <p style="background:#fffbe6; border-left:4px solid #FFE812; padding:14px 18px; border-radius:8px;">💡 봉천동 신축 아파트 사례는 → <a href="blog-post-06" style="color:#2c2762; font-weight:600;">봉천동 신축 아파트 입주청소, 당신의 선택이 중요합니다</a></p>
+
+                            <h2 id="checklist">신축 건물별 입주청소 필수 체크리스트</h2>
 
                             <h3>카테고리 1: 천장·벽·창호</h3>
 
@@ -263,7 +323,7 @@
                                 <li>중요도: ⭐⭐⭐⭐⭐ (겨울 난방 효율 영향)</li>
                             </ul>
 
-                            <h2>셀프 청소 vs 전문 청소팀: 비용 분석</h2>
+                            <h2 id="cost">셀프 청소 vs 전문 청소팀: 비용 분석</h2>
 
                             <h3>30평 신축아파트 기준</h3>
 
@@ -307,7 +367,9 @@
                                 <li>프라임에셋 고객 → <strong>패키지 청소</strong> (이사 + 청소 + 인테리어)</li>
                             </ul>
 
-                            <h2>입주청소 함정 3가지</h2>
+                            <p style="background:#fffbe6; border-left:4px solid #FFE812; padding:14px 18px; border-radius:8px;">💡 이사 일정과 함께 잡으면 비용이 줄어듭니다 → <a href="blog-post-09" style="color:#2c2762; font-weight:600;">성공적인 이사 준비 체크리스트</a></p>
+
+                            <h2 id="traps">입주청소 함정 3가지</h2>
 
                             <h3>함정 1: "신축은 이미 깨끗하니까" 청소 생략</h3>
 
@@ -379,6 +441,24 @@
                             <p><strong>신축 특화 입주청소</strong> 서비스를 제공합니다.</p>
 
                             <p>당신의 첫 보금자리, 깨끗하고 안전하게 시작하세요.</p>
+
+                            <h2>함께 읽으면 좋은 글</h2>
+                            <ul>
+                                <li><a href="blog-post-06">봉천동 신축 아파트 입주청소 — 전문 청소팀과 개별 청소의 장단점 비교</a></li>
+                                <li><a href="blog-post-09">성공적인 이사 준비 체크리스트 — 이사 4주 전부터 당일까지</a></li>
+                                <li><a href="blog-post-22">낙성대 원룸 계약 후 보증금 떼일 뻔한 학생 사례 — 계약 함정 3가지</a></li>
+                                <li><a href="blog-post-05">인테리어 공사 전 꼭 알아야 할 법적 주의사항</a></li>
+                                <li><a href="blog-post-11">새로운 집에서 시작하는 스마트한 생활 — 공간 활용 팁</a></li>
+                            </ul>
+
+                            <h2>낙성대역 프라임에셋부동산 안내</h2>
+                            <p>
+                                <strong>프라임에셋부동산</strong><br>
+                                주소: 서울특별시 관악구 솔밭로 1 봉천빌딩 1층 (<strong>낙성대역 5번 출구 도보 1분</strong>)<br>
+                                영업시간: 매일 10:00 ~ 19:00<br>
+                                취급: 관악구·낙성대동·봉천동·신림동 원룸 / 투룸 / 전세 / 월세 중개, 이사·입주청소·가전렌탈·인테리어 원스톱
+                            </p>
+                            <p>중개부터 <strong>이사 → 입주청소 → 가전 설치</strong>까지 한 팀이 일정을 맞춰 진행합니다. <a href="/">프라임에셋부동산 홈으로 가기</a> · <a href="blog-list">전체 블로그 보기</a></p>
 
                             <div style="text-align: center; margin-top: 40px; padding: 30px; background: #f0f2ff; border-radius: 15px;">
                                 <h3 style="color: #2c2762; margin-bottom: 15px;">신축 입주청소 패키지 문의</h3>

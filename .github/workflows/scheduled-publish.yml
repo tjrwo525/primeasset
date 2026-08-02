@@ -1,0 +1,84 @@
+name: 예약 블로그 자동 공개
+
+# 매일 00:00 (한국시간) 실행되어, 발행일이 된 예약 글을 공개하고 배포한다.
+# 발행할 글이 없는 날은 아무 것도 하지 않고 끝난다.
+on:
+  schedule:
+    - cron: '0 15 * * *'   # 15:00 UTC = 익일 00:00 KST
+  workflow_dispatch:        # 필요할 때 수동 실행도 가능
+    inputs:
+      dry_run:
+        description: '미리보기만 (파일 변경·배포 안 함)'
+        type: boolean
+        default: false
+      today:
+        description: '오늘 날짜 가정 (YYYY-MM-DD, 테스트용 / 비우면 실제 오늘)'
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scheduled-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 준비
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 예약 글 확인 및 공개 처리
+        id: publish
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ -n "${{ inputs.today }}" ]; then ARGS="$ARGS --today ${{ inputs.today }}"; fi
+          python scripts/publish-scheduled.py $ARGS
+
+      - name: 변경사항 커밋
+        if: steps.publish.outputs.published == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add blog-data.json sitemap.xml blog-post-*.html
+          git commit -m "예약 글 자동 공개: ${{ steps.publish.outputs.slugs }}"
+          git push
+
+      - name: Netlify 프로덕션 배포
+        if: steps.publish.outputs.published == 'true'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 0070f0f5-9c0b-4d4b-8d77-00aa8403e331
+        run: |
+          npx --yes netlify-cli@26 deploy \
+            --prod \
+            --dir=. \
+            --site="$NETLIFY_SITE_ID" \
+            --auth="$NETLIFY_AUTH_TOKEN" \
+            --message="예약 공개: ${{ steps.publish.outputs.slugs }}"
+
+      - name: 검색엔진에 sitemap 변경 알림
+        if: steps.publish.outputs.published == 'true'
+        continue-on-error: true
+        run: |
+          SITEMAP="https://primeasset-realestate.co.kr/sitemap.xml"
+          curl -sS "https://www.google.com/ping?sitemap=$SITEMAP" -o /dev/null || true
+          curl -sS "https://www.bing.com/ping?sitemap=$SITEMAP"   -o /dev/null || true
+          echo "sitemap 핑 전송 완료"
+
+      - name: 결과 요약
+        run: |
+          if [ "${{ steps.publish.outputs.published }}" = "true" ]; then
+            echo "### 공개 완료: ${{ steps.publish.outputs.slugs }}" >> $GITHUB_STEP_SUMMARY
+            echo "https://primeasset-realestate.co.kr/" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### 오늘 발행할 예약 글이 없습니다" >> $GITHUB_STEP_SUMMARY
+          fi
