@@ -1,6 +1,17 @@
 {
   "blogs": [
     {
+      "id": 23,
+      "link": "blog-post-23",
+      "title": "입주청소 마지막이 진짜 청소다 — 신축 vs 일반 건물별 필수 청소 체크리스트 & 비용 함정",
+      "category": "부동산 정보",
+      "date": "2026년 8월 10일",
+      "image": "assets/images/move-in-cleaning-comparison.jpg",
+      "imageWebp": "assets/images/move-in-cleaning-comparison.webp",
+      "excerpt": "신축아파트 입주청소 vs 일반 건물 청소. 먼지, 도장 흐름, 벽면 오염 완벽 제거 가이드. 프라임에셋의 실제 청소 사례와 건물별 체크리스트. 셀프 청소 vs 전문팀 비용 분석.",
+      "content": "신축아파트 입주청소 vs 일반 건물 청소. 먼지, 도장 흐름, 벽면 오염 완벽 제거 가이드. 프라임에셋의 실제 청소 사례와 건물별 체크리스트. 셀프 청소 vs 전문팀 비용 분석."
+    },
+    {
       "id": 22,
       "link": "blog-post-22",
       "title": "낙성대 원룸 계약 후 보증금 떼일 뻔한 학생 사례 — 중개사도 놓친 3가지 함정",
