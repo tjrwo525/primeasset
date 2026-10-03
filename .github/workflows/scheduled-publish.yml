@@ -52,18 +52,7 @@ jobs:
           git commit -m "예약 글 자동 공개: ${{ steps.publish.outputs.slugs }}"
           git push
 
-      - name: Netlify 프로덕션 배포
-        if: steps.publish.outputs.published == 'true'
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: 0070f0f5-9c0b-4d4b-8d77-00aa8403e331
-        run: |
-          npx --yes netlify-cli@26 deploy \
-            --prod \
-            --dir=. \
-            --site="$NETLIFY_SITE_ID" \
-            --auth="$NETLIFY_AUTH_TOKEN" \
-            --message="예약 공개: ${{ steps.publish.outputs.slugs }}"
+      # 배포는 위의 git push를 받은 Netlify Git 연동이 자동으로 처리한다 (CLI 배포 단계 불필요)
 
       - name: 검색엔진에 sitemap 변경 알림
         if: steps.publish.outputs.published == 'true'
