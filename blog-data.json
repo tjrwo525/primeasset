@@ -1,6 +1,28 @@
 {
   "blogs": [
     {
+      "id": 33,
+      "link": "blog-post-33",
+      "title": "10·15 대책 1년, 서울 전월세는 왜 불안한가 — 관악구·낙성대 원룸 세입자가 지금 볼 것",
+      "category": "부동산 정보",
+      "date": "2026년 10월 13일",
+      "image": "assets/images/2026-october-seoul-rent-news-gwanak-hero.jpg",
+      "imageWebp": "assets/images/2026-october-seoul-rent-news-gwanak-hero.webp",
+      "excerpt": "2026년 10월 13일 기준. 주거 PF 규제 2년 유예와 10·15 대책 1년 후 서울 전월세 불안 뉴스를, 관악구·낙성대·봉천·신림 원룸 세입자가 바로 적용할 수 있게 정리했습니다. 아파트 전세와 원룸 월세는 다른 시장입니다.",
+      "content": "2026년 10월 13일 기준. 주거 PF 규제 2년 유예와 10·15 대책 1년 후 서울 전월세 불안 뉴스를, 관악구·낙성대·봉천·신림 원룸 세입자가 바로 적용할 수 있게 정리했습니다. 아파트 전세와 원룸 월세는 다른 시장입니다."
+    },
+    {
+      "id": 32,
+      "link": "blog-post-32",
+      "title": "연말 이사 60일 전 — 관악구·낙성대 원룸 재계약·퇴거·새집 찾기 체크리스트",
+      "category": "부동산 정보",
+      "date": "2026년 10월 8일",
+      "image": "assets/images/2026-october-gwanak-yearend-move-prep-hero.jpg",
+      "imageWebp": "assets/images/2026-october-gwanak-yearend-move-prep-hero.webp",
+      "excerpt": "2026년 10월 8일 기준, 연말·연초 이사를 앞둔 관악구·낙성대역 원룸 세입자를 위한 60일 전 준비법. 재계약·월세 협상, 퇴거·보증금, 새집 비교 타이밍과 체크리스트를 낙성대역 프라임에셋부동산이 정리했습니다.",
+      "content": "2026년 10월 8일 기준, 연말·연초 이사를 앞둔 관악구·낙성대역 원룸 세입자를 위한 60일 전 준비법. 재계약·월세 협상, 퇴거·보증금, 새집 비교 타이밍과 체크리스트를 낙성대역 프라임에셋부동산이 정리했습니다."
+    },
+    {
       "id": 31,
       "link": "blog-post-31",
       "title": "관악구·낙성대 부동산 구인 2026 — 공인중개사·중개보조원, 면접에서 조건 확인",

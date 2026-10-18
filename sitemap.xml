@@ -27,6 +27,20 @@
 
   <!-- 블로그 포스트 - 최신순 -->
   <url>
+    <loc>https://primeasset-realestate.co.kr/blog-post-33</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://primeasset-realestate.co.kr/blog-post-32</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://primeasset-realestate.co.kr/blog-post-31</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
