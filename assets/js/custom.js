@@ -16,25 +16,28 @@
   });
 
 
-	$('.loop').owlCarousel({
-      center: true,
-      items:1,
-      loop:true,
-      autoplay: true,
-      nav: true,
-      margin:0,
-      responsive:{ 
-          1200:{
-              items:5
-          },
-          992:{
-              items:3
-          },
-          760:{
-            items:2
-        }
-      }
-  });
+	// 블로그·채용 페이지에는 owl 플러그인이 없다. 여기서 예외가 나면 아래 헤더 클릭 처리가 등록되지 않는다.
+	if ($('.loop').length && $.fn.owlCarousel) {
+		$('.loop').owlCarousel({
+	      center: true,
+	      items:1,
+	      loop:true,
+	      autoplay: true,
+	      nav: true,
+	      margin:0,
+	      responsive:{ 
+	          1200:{
+	              items:5
+	          },
+	          992:{
+	              items:3
+	          },
+	          760:{
+	            items:2
+	        }
+	      }
+	  });
+	}
 
 	// Reviews 無限スクロール：カードを複製してシームレスループを実現
 	var $track = $('.reviews-marquee-track');
