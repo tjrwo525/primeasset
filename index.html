@@ -68,6 +68,7 @@
   <link rel="stylesheet" href="assets/css/site-footer.css">
   <link rel="stylesheet" href="assets/css/animated.css">
   <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/home-enhance.css">
   
   <style>
     .contact-card-wrapper {
@@ -413,6 +414,63 @@
       "sameAs": [
         "https://pf.kakao.com/_ffcTX"
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://primeasset-realestate.co.kr/#faq",
+      "isPartOf": {
+        "@id": "https://primeasset-realestate.co.kr/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "방문 상담은 언제 가능한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "방문 상담은 매일 10:00~19:00입니다. 카카오톡 문의는 24시간 접수되며, 원하는 지역·예산·입주 날짜를 먼저 남겨 주시면 조건에 맞는 매물을 추려 두고 안내해 드립니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "어떤 매물을 중개하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "낙성대역·봉천동·서울대입구·신림 일대의 원룸·투룸 월세와 전세를 중심으로, 신혼부부 전세 등 관악구 주거 매물을 중개합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "중개보수(복비)는 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "중개보수는 서울특별시 조례가 정한 상한 요율 안에서 거래 금액에 따라 정해집니다. 계약 전에 예상 금액과 산출 내역을 먼저 설명해 드립니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "서울대 신입생이나 첫 자취도 상담할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네. 통학·출퇴근 동선과 예산, 입주 날짜를 알려 주시면 그에 맞는 매물을 비교해 드립니다. 처음 집을 구할 때 볼 것들은 <a href=\"https://primeasset-realestate.co.kr/blog-post-13\">서울대 신입생 자취방 구하기 가이드</a>에도 정리해 두었습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "계약 전에 꼭 확인할 것은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "등기부등본으로 소유자와 근저당·압류 여부를, 건축물대장으로 용도와 위반건축물 여부를 확인하세요. 잔금일에는 전입신고와 확정일자를 바로 받는 것이 좋습니다. 자세한 순서는 <a href=\"https://primeasset-realestate.co.kr/blog-post-28\">전세사기 예방 체크리스트</a>에 정리했습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "이사·입주청소도 함께 맡길 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네. 계약 후 이사, 입주청소, 가전렌탈, 인테리어까지 필요한 서비스를 함께 상담해 드립니다."
+          }
+        }
+      ]
     }
   ]
 }
@@ -686,7 +744,7 @@
   <!-- ===== 건강검진 이벤트 팝업 End ===== -->
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+  <header class="header-area header-sticky">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -721,13 +779,13 @@
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="main-banner" id="top">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="row">
             <div class="col-lg-6 align-self-center">
-              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+              <div class="left-content show-up header-text">
                 <div class="row">
                   <div class="col-lg-12">
                     <h6>부동산 원스톱 서비스</h6>
@@ -735,15 +793,19 @@
                     <p>서울대생 원룸부터 신혼부부 전세까지. 관악구 봉천동/낙성대 전문 중개와 입주 청소·이사 서비스를 원스톱으로 제공합니다.</p>
                   </div>
                   <div class="col-lg-12">
-                    <div class="border-first-button scroll-to-section">
-                      <a href="#contact-section">무료 상담 신청</a>
+                    <div class="hero-cta">
+                      <div class="border-first-button scroll-to-section">
+                        <a href="#contact-section">무료 상담 신청</a>
+                      </div>
+                      <a class="hero-call" href="tel:01083921072"><i class="fas fa-phone" aria-hidden="true"></i> 010-8392-1072</a>
                     </div>
+                    <p class="hero-meta">지하철 2호선 낙성대역 5번 출구 도보 1분 · 방문 상담 매일 10:00~19:00</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="right-image">
                 <div class="expert-showcase">
                   <div class="expert-photo-frame">
                     <picture><source srcset="assets/images/slider-dec-v3.webp" type="image/webp"><img src="assets/images/slider-dec-v3.png" alt="낙성대역 부동산 대표 공인중개사 김익환 - 서울 관악구 봉천동 전문가" loading="eager"></picture>
@@ -807,62 +869,11 @@
                 </div>
                 <p><strong>관악구 낙성대역 5번 출구, 도보 1분</strong><br><br>프라임에셋은 지역 맞춤형 부동산 중개 서비스와 생활 편의 서비스를 한 곳에서 제공하는 원스톱 부동산
                   전문가입니다. 단순한 중개를 넘어 청소, 이사, 가전렌탈 등 입주 이후까지 신뢰할 수 있는 파트너가 되어 고객님의 새로운 보금자리를 완성합니다.</p>
-                <div class="row">
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="95">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            95%<br>
-                            <span>신뢰도</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="90">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            90%<br>
-                            <span>계약 속도</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="92">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            92%<br>
-                            <span>만족도</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <ul class="about-facts">
+                  <li><strong>도보 1분</strong><span>지하철 2호선 낙성대역 5번 출구</span></li>
+                  <li><strong>매일 10~19시</strong><span>방문 상담 · 카카오톡은 24시간 접수</span></li>
+                  <li><strong>원스톱</strong><span>중개 · 이사 · 입주청소 · 가전렌탈 · 인테리어</span></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -889,8 +900,8 @@
                   <div class="menu">
                     <div class="first-thumb active">
                       <div class="thumb">
-                        <span class="icon"><i class="fas fa-shield-alt"></i></span>
-                        보험
+                        <span class="icon"><i class="fas fa-key"></i></span>
+                        중개
                       </div>
                     </div>
                     <div>
@@ -911,38 +922,43 @@
                         가전렌탈
                       </div>
                     </div>
-                    <div class="last-thumb">
+                    <div>
                       <div class="thumb">
                         <span class="icon"><i class="fas fa-palette"></i></span>
                         인테리어
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">
+                        <span class="icon"><i class="fas fa-shield-alt"></i></span>
+                        보험
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <ul class="nacc">
-                    <!-- 1. 보험료리셋 -->
+                    <!-- 1. 부동산 중개 -->
                     <li class="active">
                       <div>
                         <div class="thumb">
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>보험료리셋 - 전문 보험상담</h4>
-                                <p>보험상담을 아주 잘해주는 좋은 서비스입니다. 임차인 배상책임부터 월세 보증, 화재, 재산 손해까지 폭넓은 보장을 받으세요. 보험료리셋은 신뢰할 수 있는 전문 상담으로 입주자에게 꼭 필요한 맞춤형 보험 상품을 제공합니다. 빠른 심사와 투명한 처리로 안심하실 수 있습니다.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> 전문 보험상담</span>
-                                  <span><i class="fa fa-check"></i> 배상책임보험</span> <span><i class="fa fa-check"></i>
-                                    월세 보증보험</span>
-                                  <span><i class="fa fa-check"></i> 화재보험</span> <span><i class="fa fa-check"></i>
-                                    신속한 심사</span> <span><i class="fa fa-check"></i> 24시간 상담</span>
+                                <h4>원룸·투룸·전월세 중개</h4>
+                                <p>낙성대역·봉천동·서울대입구·신림 생활권의 원룸·투룸 월세와 전세를 예산, 통학·출퇴근 동선, 입주 날짜에 맞춰 골라 드립니다. 계약 전에는 등기부등본·건축물대장으로 권리관계를 함께 확인하고, 잔금일의 전입신고·확정일자까지 순서대로 안내해 드립니다.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> 원룸·투룸</span>
+                                  <span><i class="fa fa-check"></i> 전세·월세</span> <span><i class="fa fa-check"></i> 신혼부부 전세</span>
+                                  <span><i class="fa fa-check"></i> 권리관계 확인</span> <span><i class="fa fa-check"></i> 계약서 검토</span>
+                                  <span><i class="fa fa-check"></i> 입주 일정 조율</span>
                                 </div>
-                                <p><strong>모든 위험으로부터 당신과 가족을 보호합니다.</strong></p>
-                                <p style="margin-top: 15px;"><a href="https://www.insurance-reset.co.kr/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: #003990; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: 500; transition: all 0.3s;">→ 보험료리셋 방문하기</a></p>
+                                <p><strong>예산과 입주 날짜만 알려 주시면 맞는 매물을 추려 안내해 드립니다.</strong></p>
+                                <p style="margin-top: 15px;"><a class="service-cta" href="https://pf.kakao.com/_ffcTX/chat" target="_blank" rel="noopener noreferrer">카톡으로 매물 문의하기 →</a></p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
-                                <picture><source srcset="assets/images/comprehensive-insurance-service.webp" type="image/webp"><img src="assets/images/comprehensive-insurance-service.png" alt="보험료리셋 - 전문 보험상담 서비스" loading="lazy"></picture>
+                                <picture><source srcset="assets/images/2026-october-gwanak-tenant-lease-review.webp" type="image/webp"><img src="assets/images/2026-october-gwanak-tenant-lease-review.jpg" alt="원룸 책상에서 임대차 계약서를 검토하는 세입자" width="1200" height="675" loading="lazy" decoding="async"></picture>
                               </div>
                             </div>
                           </div>
@@ -1061,6 +1077,36 @@
                         </div>
                       </div>
                     </li>
+
+                    <!-- 6. 보험료리셋 -->
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>보험료리셋 - 전문 보험상담</h4>
+                                <p>입주 전후에 필요한 보험을 전문 상담사와 함께 점검하세요. 임차인 배상책임부터 월세 보증, 화재, 재산 손해까지 지금 가입한 보장과 빠진 보장을 비교해 맞춤형으로 안내해 드립니다.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> 전문 보험상담</span>
+                                  <span><i class="fa fa-check"></i> 배상책임보험</span> <span><i class="fa fa-check"></i>
+                                    월세 보증보험</span>
+                                  <span><i class="fa fa-check"></i> 화재보험</span> <span><i class="fa fa-check"></i>
+                                    신속한 심사</span> <span><i class="fa fa-check"></i> 24시간 상담</span>
+                                </div>
+                                <p><strong>모든 위험으로부터 당신과 가족을 보호합니다.</strong></p>
+                                <p style="margin-top: 15px;"><a href="https://www.insurance-reset.co.kr/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: #003990; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: 500; transition: all 0.3s;">→ 보험료리셋 방문하기</a></p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <picture><source srcset="assets/images/comprehensive-insurance-service.webp" type="image/webp"><img src="assets/images/comprehensive-insurance-service.png" alt="보험료리셋 - 전문 보험상담 서비스" loading="lazy"></picture>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
                   </ul>
                 </div>
               </div>
@@ -1212,13 +1258,50 @@
     </div>
   </div>
 
+  <!-- 자주 묻는 질문 (FAQPage 구조화 데이터와 같은 문장) -->
+  <section id="faq" class="faq-section section" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-heading">
+        <h6>자주 묻는 질문</h6>
+        <h4 id="faq-title">처음 오시는 분들이 <em>많이 묻는 것</em></h4>
+        <div class="line-dec"></div>
+      </div>
+      <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>방문 상담은 언제 가능한가요?</summary>
+            <p>방문 상담은 매일 10:00~19:00입니다. 카카오톡 문의는 24시간 접수되며, 원하는 지역·예산·입주 날짜를 먼저 남겨 주시면 조건에 맞는 매물을 추려 두고 안내해 드립니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary>어떤 매물을 중개하나요?</summary>
+            <p>낙성대역·봉천동·서울대입구·신림 일대의 원룸·투룸 월세와 전세를 중심으로, 신혼부부 전세 등 관악구 주거 매물을 중개합니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary>중개보수(복비)는 얼마인가요?</summary>
+            <p>중개보수는 서울특별시 조례가 정한 상한 요율 안에서 거래 금액에 따라 정해집니다. 계약 전에 예상 금액과 산출 내역을 먼저 설명해 드립니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary>서울대 신입생이나 첫 자취도 상담할 수 있나요?</summary>
+            <p>네. 통학·출퇴근 동선과 예산, 입주 날짜를 알려 주시면 그에 맞는 매물을 비교해 드립니다. 처음 집을 구할 때 볼 것들은 <a href="/blog-post-13">서울대 신입생 자취방 구하기 가이드</a>에도 정리해 두었습니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary>계약 전에 꼭 확인할 것은 무엇인가요?</summary>
+            <p>등기부등본으로 소유자와 근저당·압류 여부를, 건축물대장으로 용도와 위반건축물 여부를 확인하세요. 잔금일에는 전입신고와 확정일자를 바로 받는 것이 좋습니다. 자세한 순서는 <a href="/blog-post-28">전세사기 예방 체크리스트</a>에 정리했습니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary>이사·입주청소도 함께 맡길 수 있나요?</summary>
+            <p>네. 계약 후 이사, 입주청소, 가전렌탈, 인테리어까지 필요한 서비스를 함께 상담해 드립니다.</p>
+          </details>
+      </div>
+    </div>
+  </section>
+
   <div id="contact-section" class="contact-us section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
             <h6>상담 및 문의</h6>
-            <h4>프라임에셋 <em>카톡채널</em></h4>
+            <h4>카톡·전화로 <em>바로 상담</em></h4>
             <div class="line-dec"></div>
           </div>
         </div>
@@ -1243,6 +1326,10 @@
                     <i class="fab fa-kakaotalk"></i>
                     카톡으로 문의하기
                   </a>
+                  <a href="tel:01083921072" class="call-btn">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    전화 010-8392-1072
+                  </a>
                 </div>
               </div>
               
@@ -1259,8 +1346,8 @@
                         <i class="fas fa-clock"></i>
                       </div>
                       <div class="feature-text">
-                        <strong>24시간 언제든지 문의</strong>
-                        <span>실시간 응답으로 빠른 상담</span>
+                        <strong>카카오톡 24시간 접수</strong>
+                        <span>방문 상담 매일 10:00~19:00, 순서대로 답변</span>
                       </div>
                     </div>
                     <div class="feature-item">
@@ -1299,6 +1386,36 @@
       </div>
     </div>
   </div>
+
+  <!-- 오시는 길 -->
+  <section id="visit" class="visit-section section" aria-labelledby="visit-title">
+    <div class="container">
+      <div class="section-heading">
+        <h6>오시는 길</h6>
+        <h4 id="visit-title">낙성대역 5번 출구 <em>도보 1분</em></h4>
+        <div class="line-dec"></div>
+      </div>
+      <div class="visit-card">
+        <div class="visit-photo">
+          <picture><source srcset="assets/images/2026-gwanak-realtor-choice-guide-hero.webp" type="image/webp"><img src="assets/images/2026-gwanak-realtor-choice-guide-hero.jpg" alt="지하철 2호선 낙성대역(227) 역명판" width="800" height="533" loading="lazy" decoding="async"></picture>
+        </div>
+        <div class="visit-info">
+          <dl>
+            <div><dt>주소</dt><dd>서울 관악구 솔밭로 1 봉천빌딩 1층 <span class="visit-zip">(우 08779)</span> <button type="button" class="copy-address" data-copy="서울 관악구 솔밭로 1 봉천빌딩 1층">주소 복사</button></dd></div>
+            <div><dt>교통</dt><dd>지하철 2호선 낙성대역 5번 출구에서 도보 1분</dd></div>
+            <div><dt>상담 시간</dt><dd>방문 상담 매일 10:00~19:00<br>카카오톡 문의는 24시간 접수</dd></div>
+            <div><dt>전화</dt><dd><a href="tel:01083921072">010-8392-1072</a></dd></div>
+          </dl>
+          <div class="visit-buttons">
+            <a class="map-btn map-btn--naver" href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B4%80%EC%95%85%EA%B5%AC%20%EC%86%94%EB%B0%AD%EB%A1%9C%201" target="_blank" rel="noopener noreferrer">네이버 지도</a>
+            <a class="map-btn map-btn--kakao" href="https://map.kakao.com/link/search/%EC%84%9C%EC%9A%B8%20%EA%B4%80%EC%95%85%EA%B5%AC%20%EC%86%94%EB%B0%AD%EB%A1%9C%201" target="_blank" rel="noopener noreferrer">카카오맵</a>
+            <a class="map-btn map-btn--google" href="https://www.google.com/maps/search/?api=1&amp;query=%EC%84%9C%EC%9A%B8%20%EA%B4%80%EC%95%85%EA%B5%AC%20%EC%86%94%EB%B0%AD%EB%A1%9C%201" target="_blank" rel="noopener noreferrer">구글 지도</a>
+          </div>
+          <p class="visit-note">오시기 전에 카카오톡으로 원하는 조건을 남겨 주시면 매물을 미리 추려 두고 기다리겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div id="footer-placeholder"></div>
 
@@ -1381,6 +1498,19 @@
   </script>
   
   <script>
+    document.querySelectorAll('.copy-address').forEach(function (btn) {
+      if (!navigator.clipboard) { btn.hidden = true; return; }
+      btn.addEventListener('click', function () {
+        navigator.clipboard.writeText(btn.dataset.copy).then(function () {
+          btn.textContent = '복사됨';
+          setTimeout(function () { btn.textContent = '주소 복사'; }, 2000);
+        }, function (err) {
+          console.warn('주소 복사 실패:', err);
+          btn.textContent = '복사 실패';
+        });
+      });
+    });
+
     function showPreparing(event) {
       event.preventDefault();
       alert('현재 준비중입니다.');
