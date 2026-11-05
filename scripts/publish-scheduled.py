@@ -70,9 +70,10 @@ def read_post(path):
 
     og_image = find(r'<meta\s+property="og:image"\s+content="([^"]+)"',
                     html, "og:image", path)
-    image = og_image.replace(SITE + "/", "")
+    # ?v= 캐시 버스터는 파일 존재 검사·목록 데이터에 쓰지 않는다
+    image = og_image.replace(SITE + "/", "").split("?", 1)[0]
 
-    webp = re.search(r'href="(assets/images/[^"]+\.webp)"', html)
+    webp = re.search(r'href="(assets/images/[^"?]+\.webp)(?:\?[^"]*)?"', html)
 
     return {
         "path": path,

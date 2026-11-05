@@ -4,13 +4,8 @@
 User-agent: *
 Allow: /
 
-# 불필요한 파일/폴더는 크롤링 제한
-Disallow: /includes/
-Disallow: /vendor/
-Disallow: /scripts/
-Disallow: /content/
-Disallow: /WORK-STATUS.md
-Disallow: /package.json
+# 렌더링에 필요한 /vendor/(Bootstrap·jQuery)·/includes/(공통 헤더·푸터)는 막지 않는다.
+# 작업 스크립트·원고·메모는 배포 때 지워지므로(scripts/strip-internal.mjs) 여기서 따로 막을 필요가 없다.
 
 # 사이트맵 위치 지정
 Sitemap: https://primeasset-realestate.co.kr/sitemap.xml

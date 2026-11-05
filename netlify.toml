@@ -1,8 +1,9 @@
 # Netlify Configuration
 [build]
 publish = "."
-# 배포 직전 내부 파일(작업 스크립트·메모 등)을 배포 폴더에서 지운다. 로컬에서는 아무것도 지우지 않는다(scripts/strip-internal.mjs)
-command = "node scripts/strip-internal.mjs . scripts content"
+# 배포 직전: ①블로그 목록 구조화 데이터·크롤러용 링크(fix-seo.js)와 sitemap.xml(build-sitemap.mjs)을 blog-data.json 기준으로 다시 만들고
+# ②내부 파일(작업 스크립트·원고·메모·docs)을 배포 폴더에서 지운다. strip-internal은 로컬에서는 아무것도 지우지 않는다
+command = "node scripts/fix-seo.js && node scripts/build-sitemap.mjs && node scripts/strip-internal.mjs . scripts content docs"
 
 [build.processing]
 skip_processing = false
