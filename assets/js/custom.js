@@ -232,11 +232,13 @@
 
 
 	// Page loading animation
-	 $(window).on('load', function() {
-
-        $('#js-preloader').addClass('loaded');
-
-    });
+	// 예전에는 window load(모든 이미지·글꼴·외부 CSS 완료)까지 화면 전체를 흰 로딩 화면으로 가렸다.
+	// 본문은 DOM이 준비되면 바로 보여 준다. load는 혹시 ready를 놓친 경우의 예비.
+	function hidePreloader() {
+		$('#js-preloader').addClass('loaded');
+	}
+	$(hidePreloader);
+	$(window).on('load', hidePreloader);
 
 	
 

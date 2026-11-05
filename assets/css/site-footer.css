@@ -27,6 +27,7 @@
 .site-footer-copy {
     text-align: center;
     margin: 0;
+    word-break: keep-all;
 }
 
 /* 크롤러용 정적 블로그 목록（화면에는 숨김, 링크는 HTML에 존재） */
@@ -56,4 +57,77 @@
 .site-footer-copy a:hover {
     text-decoration: underline;
     color: #003990;
+}
+
+/* 휴대폰 하단 고정 상담 버튼 — 전화·카톡·오시는 길 (2026-11-05) */
+.mobile-action-bar {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .mobile-action-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 90;
+        display: flex;
+        gap: 6px;
+        padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+        background: rgba(255, 255, 255, 0.97);
+        border-top: 1px solid #e3e8f4;
+        box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .mab-btn {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        min-height: 46px;
+        border-radius: 12px;
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        word-break: keep-all;
+    }
+
+    .mab-btn--call {
+        background: #003990;
+        color: #fff;
+    }
+
+    .mab-btn--kakao {
+        background: #fee500;
+        color: #191919;
+    }
+
+    .mab-btn--map {
+        background: #fff;
+        color: #2c2762;
+        border: 1px solid #c9d3e6;
+    }
+
+    .mab-btn:hover,
+    .mab-btn:focus-visible {
+        filter: brightness(0.95);
+    }
+
+    .mab-btn--call:hover,
+    .mab-btn--call:focus-visible {
+        color: #fff;
+    }
+
+    /* 마지막 내용이 고정 버튼에 가리지 않게 */
+    .site-footer {
+        padding-bottom: calc(76px + env(safe-area-inset-bottom));
+    }
+}
+
+@media (max-width: 360px) {
+    .mab-btn {
+        font-size: 13px;
+        gap: 4px;
+    }
 }
