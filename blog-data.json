@@ -1,6 +1,17 @@
 {
   "blogs": [
     {
+      "id": 35,
+      "link": "blog-post-35",
+      "title": "11월 1일 낙성대 원룸, 겨울 전에 볼 것 — 관악구 난방비·골목·1월 만기",
+      "category": "부동산 정보",
+      "date": "2026년 11월 1일",
+      "image": "assets/images/2026-november-gwanak-oneroom-evening-hero.jpg",
+      "imageWebp": "assets/images/2026-november-gwanak-oneroom-evening-hero.webp",
+      "excerpt": "2026년 11월 1일 기준. 관악구·낙성대·봉천·신림 원룸은 월세와 겨울 난방비를 나눠 보고, 해 진 뒤 골목을 한 번 걸어 보는 달입니다. 1월 말 만기 통지 마감은 11월 30일입니다.",
+      "content": "2026년 11월 1일 기준. 관악구·낙성대·봉천·신림 원룸은 월세와 겨울 난방비를 나눠 보고, 해 진 뒤 골목을 한 번 걸어 보는 달입니다. 1월 말 만기 통지 마감은 11월 30일입니다."
+    },
+    {
       "id": 34,
       "link": "blog-post-34",
       "title": "12월에 원룸 만기라면 지금이 통지 기한 — 관악구·낙성대 계약갱신, 10월 22일 기준",
